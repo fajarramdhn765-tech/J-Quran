@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064B32"/>
+      <stop offset="100%" stop-color="#032B1C"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE68A"/>
+      <stop offset="50%" stop-color="#E9B949"/>
+      <stop offset="100%" stop-color="#B48216"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Islamic Geometric Ring Pattern -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#E9B949" stroke-width="2" stroke-opacity="0.25" stroke-dasharray="6,6"/>
+  <circle cx="256" cy="256" r="195" fill="none" stroke="#E9B949" stroke-width="1.5" stroke-opacity="0.2"/>
+
+  <!-- Crescent & Star at top center -->
+  <g transform="translate(256, 135) scale(0.85)">
+    <!-- Crescent -->
+    <path d="M 0,-40 A 40,40 0 1 0 40,0 A 32,32 0 1 1 0,-40 Z" fill="url(#goldGrad)" />
+    <!-- Star -->
+    <path d="M 22,-20 L 25,-12 L 33,-12 L 27,-7 L 29,1 L 22,-4 L 15,1 L 17,-7 L 11,-12 L 19,-12 Z" fill="url(#goldGrad)" />
+  </g>
+
+  <!-- Holy Quran Open Book Motif -->
+  <g filter="url(#shadow)" transform="translate(256, 310)">
+    <!-- Rehal / Book Stand Base -->
+    <path d="M -130,70 L -40,10 L 0,35 L 40,10 L 130,70 L 110,85 L 0,48 L -110,85 Z" fill="#B48216" opacity="0.65" />
+    <path d="M -120,65 L -35,12 L 0,32 L 35,12 L 120,65 L 105,76 L 0,44 L -105,76 Z" fill="url(#goldGrad)" />
+
+    <!-- Left Page -->
+    <path d="M -140,-45 C -100,-70 -35,-55 -8,-32 L -8,45 C -35,22 -100,0 -140,20 Z" fill="#FFFDF5" />
+    <!-- Left Page Lines -->
+    <path d="M -120,-28 C -90,-45 -45,-35 -20,-20" stroke="#064B32" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M -120,-10 C -90,-27 -45,-17 -20,-2" stroke="#064B32" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M -120,8 C -90,-9 -45,1 -20,16" stroke="#064B32" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Right Page -->
+    <path d="M 140,-45 C 100,-70 35,-55 8,-32 L 8,45 C 35,22 100,0 140,20 Z" fill="#FFFDF5" />
+    <!-- Right Page Lines -->
+    <path d="M 120,-28 C 90,-45 45,-35 20,-20" stroke="#064B32" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 120,-10 C 90,-27 45,-17 20,-2" stroke="#064B32" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 120,8 C 90,-9 45,1 20,16" stroke="#064B32" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Gold Center Spine & Ribbon Bookmark -->
+    <path d="M -6,-34 L 6,-34 L 6,50 L 0,62 L -6,50 Z" fill="url(#goldGrad)" />
+    <!-- Ribbon Tail hanging down -->
+    <path d="M 0,55 L 8,95 L 0,88 L -8,95 Z" fill="url(#goldGrad)" />
+  </g>
+</svg>

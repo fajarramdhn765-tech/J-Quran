@@ -1,0 +1,6 @@
+{
+  "name": "Jay'z Quran",
+  "description": "Temukan Kedamaian dalam Tilawah - Platform Al-Qur'an Digital Premium, Jadwal Salat, Kalender Hijriah & Murottal",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
